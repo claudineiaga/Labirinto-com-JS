@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Labirinto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+</head>
+
+<body>
+    <div id="gradient"></div>
+    <div id="page">
+      <div id="Message-Container">
+        <div id="message">
+          <h1>Meus Parabéns!</h1>
+          <p>Você Terminou</p>
+          <p id="moves"></p>
+          <input id="okBtn" type="button" onclick="toggleVisablity('Message-Container')" value="Muito bom!" />
+        </div>
+      </div>
+      <div id="menu">
+        <div class="custom-select">
+          <select id="diffSelect">
+                    <option value="10">Fácil</option>
+                    <option value="15">Médio</option>
+                    <option value="25">Difícil</option>
+                    <option value="38">Muito Difícil</option>                                      
+                </select>
+        </div>
+        <input id="startMazeBtn" type="button" onclick="makeMaze()" value="Iniciar" />
+      </div>
+      <div id="view">
+        <div id="mazeContainer">
+          <canvas id="mazeCanvas" class="border" height="1100" width="1100"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js"></script>
+</body>
+</html>
